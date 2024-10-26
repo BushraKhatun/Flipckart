@@ -1,0 +1,313 @@
+*{
+   padding: 0;
+   margin: 0; 
+   
+}
+nav{
+    background-color:rgb(169, 7, 169);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 10px 0px;
+    height: 50px;
+}
+.logo{
+    box-shadow:rgb(8, 168, 232);
+
+}
+.search{
+    background-color:whitesmoke;
+    padding:8px 10px;
+    width: 500px;
+    height: 20px;
+    margin: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -7px -7px 10px rgba(0,0,0,0.1),
+    7px 7px 10px rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+.search input{
+    width: 650px;
+    border: none;
+    outline: none;
+    font-size: medium;
+}
+.LoginBtn{
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: #060606;
+    cursor: pointer;
+    
+}
+.HoverLogin{
+    height: 1cm;
+    width: 1in;
+}
+.Navlink{
+    margin: 0px 20px;
+    font-size: 18px;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+}
+.Navlink :hover{
+    text-decoration: underline;
+}
+.angledownIcon{
+    font-size: 20px;
+}
+/*******************************************************/
+ .RecentSearch{
+    display: none; 
+    position: absolute;
+        top: 53px;
+        width: 500px;
+        padding:8px 10px;
+        background-color: white;
+        padding: 9px;
+        margin-left: -9px;
+        height: 400px;
+        box-shadow: -5px 5px 10px rgba(0,0,0,0.2),
+        5px 5px 10px rgba(0,0,0,0.2);
+        border-top: 1px solid #ccc;
+}
+.RecentSearch_List{
+    font-size: 20px;
+    display: flex;
+    color: rgb(95,94, 94);
+}
+.RecentSearch_List p,
+.RecentSearch_List_Discover 
+{
+padding-left: 15px;
+
+}
+.discoverMore{
+margin: 15px 0px;
+color: rgb(95,94, 94);
+}
+.RecentSearch_List_Discover:hover {
+    background-color: lightgray; 
+}
+
+
+.RecentSearch_List_Discover{
+    padding: 10px 0px;
+    display: flex;
+    font-size: 20px;
+}
+
+.search:focus-within .RecentSearch{
+    display: block;
+
+}  
+.RecentSearch_List_Discover p{
+    padding-left: 15px;
+}
+
+
+
+/****************************************************/
+
+.HoverLogin{
+    position: absolute;
+    top: 61px;
+    height: 350px;
+    width: 300px;
+    margin-left: -100px;
+    margin-right: 50px;
+    background-color: rgb(243, 246, 246);
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 7px rgba(0,0,0,0.2);
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+    font-weight: 500;
+    color: #0c0563;
+    display:none;
+}
+.triangle-up{
+    position: relative;
+   height: 0;
+   width: 0;
+   border-left:12px solid transparent ;
+   border-right:12px solid transparent ;
+   border-bottom: 10px solid white;
+   top: -9px;
+}
+.Newuser{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    font-size: 20px;
+}
+.Newuser a{
+   color:royalblue;
+   text-decoration: none;
+}
+.Newuser a:hover{
+    text-decoration: underline;
+}
+.LoginMenu{
+    width: 300px;
+    margin-top: 25px;
+    display: block;
+}
+.MenuList{
+    display: flex;
+    padding: 10px 0px ;
+}
+.MenuList p{
+    padding-left: 20px;
+}
+.MenuList i{
+    color: royalblue;
+}
+.LoginBtn:hover .HoverLogin{
+  display:flex;
+  cursor: pointer;
+  
+}
+/******************************************/
+.angledownIcon:hover .MoreIcon{
+    transition: 0.5s;
+    transform: rotate(-180deg);
+}
+.MoreOptionDisplay_Container{
+    display: none;
+    position: relative;
+    height: 1px;
+    padding-top: 10px;
+}
+.Moreoption_content{
+    position: absolute;
+    margin-top: 20px;
+    border-top:20px #625acc ;
+    width: 300px;
+    margin-left: -80px;
+    color: #0c0563;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 7px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.Moreoption{
+    display: flex;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.Moreoption p{
+    padding-left: 15px;
+}
+.angledownIcon:hover .MoreOptionDisplay_Container{
+  display: block;
+}
+/***********************************Nav bar Product*******************/
+.TopProductNavbar{
+    background-color: rgb(250, 247, 250);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #420144;
+    
+    
+   
+}
+.topProductNavbar_Nav{
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+    flex: 1;
+
+}
+.topProductNavbar_Nav img{
+    width: 100px;
+    height: 100px;
+    
+    object-fit: contain; 
+}
+.topProductNavbar_Nav p{
+    font-weight: 500;
+    
+ }
+ .topProductNavbar_Nav:hover p{
+    color: royalblue;
+ }
+  /* ***************************Slider************************* */
+
+   .Slider {
+    width: 100%;
+    display: flex;
+    padding: 50px 20px;
+    background-color: #532155;
+    overflow: hidden;  
+    }
+  
+  .SliderImage {
+    
+    width: 100%;
+    padding-right: 15px;
+    height: 250px;
+    animation : 5s sliderimages infinite;  
+  }
+  .Slider_image {
+    display: flex;
+    padding: 0px 10px;
+  }
+  .btn-container {
+    margin: auto;
+    width: 10px;
+  }
+ .btn {
+    padding: 35px 15px;
+    border: none;
+    font-size: 30px;
+    background-color: #532155;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  
+  .btn-left {
+    position: relative;
+    z-index: 5;
+  }
+  
+  .btn-right {
+    position: relative;
+    left: -35px;
+
+  }  
+
+  /* ****************************Slider image animation*   */
+    @keyframes sliderimages {
+    0%,1%,2%,3%,4%,5%,6%,7%,8%,9%{
+        transform: translatex(0);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+   80%{
+        transform: translateX(-400%);
+    }
+    95%{
+        transform: translateX(-500%);
+    }
+}     
+   
+ /* *****Best elec***
+
+  

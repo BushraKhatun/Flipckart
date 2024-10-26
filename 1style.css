@@ -1,0 +1,88 @@
+*{
+   box-sizing: border-box; 
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f1eeee;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.bestElectronic-container{
+    background-color: rgb(207, 191, 191);
+    height: 380px;
+    display: flex;
+    justify-content: space-around;
+}
+.left-part{
+    height: 100%;
+    width: 85%;
+    background-color: rgb(173, 201, 226);
+    box-shadow: 1px 1px 2px rgba(0,0,0.1);
+}
+.right-part{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(223, 236, 236);
+    padding: 0.5em;
+    box-shadow: 1px 1px 2px rgba(0,0,0.1);
+}
+.ViewAll_Btn{
+    background-color: blue;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 3px;
+    border-bottom: 1px solid #ccc;
+}
+.leftpart-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 20%;
+    background-color: #f1eeee;
+}
+.leftpart-top h1{
+    margin: 0;
+    font-size: 1.6rem;
+}
+.leftpart-top p{
+    margin: 0;
+
+}
+.leftpart-card-container{
+    background-color:white;
+    height: 75%;
+    display: flex;
+    overflow: hidden;
+}
+.card-product{
+    width: 200px;
+    height: 190px;
+    /* padding: 1em; */
+    text-align: center;
+
+}
+.card-product img{
+    height: 105px;
+    width: 100%;
+    padding: 0px 5px;
+    display: flex;
+} 
+/*****************************/
+
+.card-productName{
+    font-size: 1rem;
+    margin: 1px 0;
+}
+.productsPrice{
+    margin: 1px 0;
+    color: blue;
+}
+.card-productDes{
+    margin: 1px 0;
+}
